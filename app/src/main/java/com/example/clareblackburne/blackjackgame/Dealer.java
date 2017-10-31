@@ -58,7 +58,7 @@ public class Dealer {
     }
 
     public void ask(Player player){
-        System.out.println("Press s for stick or t for twistPlayer");
+        System.out.println("Press s for stick or t for twist");
     }
 
     public void play(){

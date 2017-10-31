@@ -61,10 +61,10 @@ public class Game {
         public void checkWinner(){
             if(player.getHandValue() > dealer.getHandValue())
             {
-                System.out.println("Player wins");
+                System.out.println("Player wins with " + player.getHandValue() + " The dealer had " + dealer.getHandValue());
             }
             else {
-                System.out.println("Dealer wins");
+                System.out.println("Dealer wins with " + dealer.getHandValue() + " The player had " + player.getHandValue());
             }
         }
 }

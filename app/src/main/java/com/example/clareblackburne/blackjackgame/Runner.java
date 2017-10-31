@@ -26,18 +26,21 @@ public class Runner {
         dealer.ask(player);
         Scanner scan = new Scanner(System.in);
             answer = scan.nextLine();
-        game.twistPlayer();
+            if(answer.equals("s")){
+                break;
+            }
+            game.twistPlayer();
             System.out.println("this is the player" + player.getHandValue());}
         while (answer.equals("t") && !game.isBust);
 
-        
+
 
         if(game.isBust){
             System.out.println("The dealer has won");
             System.exit(0);
         }
         else  {
-            System.out.println("The player has decided to stick with " + player.getHandValue() + "points. Now it's the dealer's turn");
+            System.out.println("The player has decided to stick with " + player.getHandValue() + " points. Now it's the dealer's turn");
         }
 
 
